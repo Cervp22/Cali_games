@@ -50,6 +50,7 @@ body {
 
 .main-list li:hover ul.dropdown {
   display: block;
+  background-color: white;
   margin-left: 0px;
 }
 .main-list li:hover ul.dropdown li a:hover {
@@ -87,8 +88,9 @@ body {
   height: 800px;
 }
 .main-container-child-div2 {
-  background-color: blue;
+  /*  background-color: blue;   */
   display: flex;
+  border-left: 1px solid black;
   flex-direction: column;
   width: 1600px;
   height: 800px;
@@ -96,17 +98,17 @@ body {
 /*---------- container child divs --------*/
 
 .container-div2-child1 {
-  background-color: yellow;
+  /*  background-color: yellow; */
   height: 200px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .container-div2-child2 {
-  background-color: orange;
-  height: 200px;
-  margin-top: 15px;
+  /*  background-color: orange;  */
+  height: 220px;
+  margin-top: 20px;
 }
 .container-div2-child3 {
-  background-color: green;
+  /*  background-color: green;  */
   height: 200px;
   margin-top: 15px;
 }
@@ -114,7 +116,7 @@ body {
 /* ---------- child div 1 -----------*/
 
 .div2-child-header {
-  background-color: pink;
+  /*  background-color: pink;  */
   width: fit-content;
   margin-left: 50px;
   margin-top: 20px;
@@ -123,7 +125,46 @@ body {
   margin-top: 10px;
   font-size: 20px;
   margin-left: 20px;
-  background-color: coral;
+  /* background-color: coral;  */
+}
+
+/*----------- child div 2 colum ------ */
+
+.div2-child-header2 {
+  /*  background-color: pink;*/
+  width: fit-content;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.div2-child-content2 {
+  display: flex;
+}
+.list-div2-content1 {
+  margin-left: 80px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.list-div2-content2 {
+  margin-left: 80px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.list-div2-content3 {
+  margin-left: 80px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/*-------------- container diiv 3 --------------*/
+.container-div2-child3 h3 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.container-div2-child3-list {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 /* ---------- container child columns -------*/
@@ -201,6 +242,6 @@ body {
 
 /*--------- footer container ------*/
 .footer-container {
-  background-color: green;
+  background-color: purple;
   height: 150px;
 }
