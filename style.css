@@ -19,37 +19,188 @@ body {
   margin-top: 20px;
 }
 
-ul {
+.main-list {
   list-style: none;
   background-color: grey;
-  margin-left: 360px;
+  margin-left: 250px;
   height: 80px;
 }
-ul li {
+.main-list li {
   display: inline-block;
+  margin-left: 40px;
+  font-size: 20px;
+
   position: relative;
 }
-ul li a {
+.main-list li a {
   display: block;
   height: 20px;
   padding: 30px 25px;
   text-decoration: none;
 }
-ul li ul.dropdown {
+.main-list li ul.dropdown {
   position: absolute;
   display: none;
 }
 
-ul li a:hover {
+.main-list li a:hover {
   margin-left: 0px;
   background-color: purple;
 }
-ul li:hover ul.dropdown {
+
+.main-list li:hover ul.dropdown {
   display: block;
   margin-left: 0px;
 }
-ul li:hover ul.dropdown li {
+.main-list li:hover ul.dropdown li a:hover {
+  background-color: rgb(90, 90, 255);
+}
+.main-list li:hover ul.dropdown li {
   margin-left: 0px;
   text-align: center;
   width: 100%;
+}
+
+/* ----------- Main Image CSS -------- */
+
+.main-img-div {
+  background-color: red;
+  justify-items: center;
+  width: 1707px;
+  height: 300px;
+}
+.main-image {
+  margin-left: 500px;
+  width: 400px;
+}
+
+/*------ main container for body -----*/
+
+.main-container {
+  display: flex;
+}
+
+.main-container-child-div1 {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 800px;
+}
+.main-container-child-div2 {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  height: 800px;
+}
+/*---------- container child divs --------*/
+
+.container-div2-child1 {
+  background-color: yellow;
+  height: 200px;
+  margin-top: 15px;
+}
+.container-div2-child2 {
+  background-color: orange;
+  height: 200px;
+  margin-top: 15px;
+}
+.container-div2-child3 {
+  background-color: green;
+  height: 200px;
+  margin-top: 15px;
+}
+
+/* ---------- child div 1 -----------*/
+
+.div2-child-header {
+  background-color: pink;
+  width: fit-content;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.div2-child-content {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+  background-color: coral;
+}
+
+/* ---------- container child columns -------*/
+
+.container-child-c1 {
+  display: flex;
+  flex-direction: column;
+  height: 266px;
+  border-bottom: 1px solid black;
+}
+.container-child-c2 {
+  height: 266px;
+  border-bottom: 1px solid black;
+}
+.container-child-c3 {
+  height: 266px;
+  border-bottom: 1px solid black;
+}
+
+/*-------- child column 1 child / content ------*/
+
+.child-c1-header {
+  height: 50px;
+  text-align: center;
+}
+.child-c1-header h2 {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.child-c1-content {
+  text-align: center;
+  height: 220px;
+}
+.child-c1-content h3 {
+  margin-top: 60px;
+  text-wrap: balance;
+}
+
+/*---------child column 2 child / content -----*/
+.container-child-c2 {
+  display: flex;
+  flex-direction: column;
+}
+.child-c2-header {
+  height: 40px;
+  text-align: center;
+}
+.child-c2-header h2 {
+  margin-top: 10px;
+  text-wrap: wrap;
+  text-decoration: underline;
+}
+.child-c2-content {
+  text-align: center;
+  height: 230px;
+}
+.child-c2-content h2 {
+  margin-top: 50px;
+}
+
+/*---------- child column 3 child / content ------*/
+
+.container-child-c3:hover {
+  cursor: pointer;
+}
+.container-child-c3 {
+  background-color: rgb(77, 231, 231);
+}
+
+.container-child-c3 h2 {
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+/*--------- footer container ------*/
+.footer-container {
+  background-color: green;
+  height: 150px;
 }
