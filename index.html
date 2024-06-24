@@ -9,60 +9,61 @@
   <body>
     <div class="main-nav-div">
       <div class="business-name-div">
+        
         <h1>Cali Games</h1>
+      
       </div>
-      <nav class="main-nav">
-        <ul class="main-list">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Games</a>
+      <div class="main-nav">
+        <nav>
+          <ul class="main-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a>
             <ul class="dropdown">
               <li><a href="#">Playstation</a></li>
               <li><a href="#">Xbox</a></li>
               <li><a href="#">Nintendo</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Repairs</a>
+            </ul></li>
+            <li><a href="#">Repairs</a>
             <ul class="dropdown">
-              <li><a href="#">Consoles</a></li>
-              <li><a href="#">Computers</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </nav>
+              <li><a href="#">Computer</a></li>
+              <li><a href="#">Console</a></li>
+            </ul></li>
+            <li><a href="#">Retro</a>
+              <ul class="dropdown">
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-bar-div3-bus-info">
+          <div class="business-info">
+            <div class="business-info-address-header">
+              <h4>Location:</h4>
+            </div>
+            <div class="business-info-physical-address">
+              <h5>14401 Hawthorne Blvd, Lawndale, CA 90260</h5>
+            </div>
+          </div>
+          <div class="nav-bar-hours">
+            <div class="nav-bar-hours-list">
+                <div >
+                  <h4>Mon-Sun</h4>
+                </div>
+                <div class="nav-bar-weekdays-hours">
+                  <h5>10am-8pm</h5>
+                </div>
+            </div>
+          </div>
+      </div>
     </div>
-    <!---  image is an option--
-    <div class="main-img-div">
-      <img
-        width="400"
-        height="300"
-        class="main-image"
-        src="cali-games-front-1440.jpg"
-      />
-    </div>
-    -->
 
-    <div class="main-container">
+     <div class="main-container">
       <div class="main-container-child-div1">
-        <div class="container-child-c1">
-          <div class="child-c1-header"><h2>Address:</h2></div>
-          <div class="child-c1-content">
-            <h3>14401 Hawthorne Blvd, Lawndale, CA 90260</h3>
-          </div>
-        </div>
-        <div class="container-child-c2">
-          <div class="child-c2-header"><h2>Operating Hours:</h2></div>
-          <div class="child-c2-content">
-            <h2>{Hours Here}</h2>
-          </div>
-        </div>
-        <div class="container-child-c3">
-          <h2>Trade-In Policy</h2>
-        </div>
+       {column: 1}
       </div>
       <div class="main-container-child-div2">
         <div class="container-div2-child1">
@@ -80,6 +81,49 @@
               Xbox 360, Xbox One Sega Dreamcast, Sega Genesis, Atari
               2600/5200/7800, Intellivision
             </p>
+          </div>
+        </div>
+        <div class="console-container-selection-bubbles">
+          <div class="console-bubble">
+            <div class="playstation-bubble-container">
+              <a href="#"><img src="/playstation.jpg" class="ps5-image">
+            </div>
+          </div>
+          <div class="console-bubble">
+            <div class="xbox-bubble-container">
+              <a href="#"><img src="/xbox.jpg" class="xbox-image"></a>
+
+            </div>
+            
+          </div>
+          <div class="console-bubble">
+            
+            <div class="nintendo-bubble-container">
+              <a href="#"><img src="/nintendo.png" class="nintendo-image">
+            </div>
+          
+          
+          </div>
+          <div class="console-bubble">
+            
+            <div class="pc-gaming-bubble-container">
+              <a href="#"><img src="/pc_gaming.jpg" class="pc-gaming-image"></a>
+            </div>
+          
+          </div>
+          <div class="console-bubble">
+            
+            <div class="retro-gaming-container">
+              <a href="#"><img src="/retro_gaming.jpg" class="retro-gaming-image"></a>
+            </div>
+          
+          </div>
+          <div class="console-bubble">
+            
+            <div class="accessories-container">
+             <a href="#"><img src="/accessories.jpg" class="accessories-gaming-image"></a>
+            </div>
+          
           </div>
         </div>          
           <div class="container-div2-child2">
@@ -111,15 +155,38 @@
         </div>
         </div>
         <div class="container-div2-child3">
-          <h3>Collectables& Merchandise</h3>
-          <div class="container-div2-child3-list">
-            {insert list of merchandise and & collectables}
+          <div class="container-div2-child3-widget">
+            
+            <div class="container-div2-child3-list">
+              <div><h3>Collectables& Merchandise</h3></div>
+              {insert list of merchandise and & collectables}
+            </div>
+
+
           </div>
+         
         </div>
+      </div>
+      <div class="third body column">
+        {test}
       </div>
       </div>
     <footer class="footer-container">
-      This is the footer
+      <div class="footer-column1">{column:1}</div>
+      <div class="footer-column2">
+        <div class="column2-header">
+          <h3>Get Promotions and keep up with us!</h3>
+        </div>
+        <div class="column2-email-submit">
+          <form>
+            <input type="text" class="email-userinput" placeholder="Enter your email..">
+            <input type="submit">
+          </form>
+        </div>
+        <div class="footer-private-policy"><a href="#"><h6>@Private Policy</h6></a></div>
+
+      </div>
+      <div class="footer-column3">{column:3}</div>
     </footer>
   </body>
 </html>

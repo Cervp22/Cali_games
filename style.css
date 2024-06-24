@@ -11,25 +11,31 @@ body {
   border-bottom: 1px solid black;
   height: 80px;
 }
+/*--------- Business name div on left corner ------*/
 .business-name-div {
-  margin-left: 120px;
+/*  background-color: blue;  */
+  width:700px;
+  height:80px;
+  text-align: center;
+}
+.business-name-div h1{
+  padding-top: 20px;
 }
 
-.business-name-div h1 {
-  margin-top: 20px;
-}
 
+/*------------------------------------------------*/
+
+.main-nav{
+/*  background-color: yellow;  */
+  text-align: center;
+  width:1200px;
+}
 .main-list {
   list-style: none;
-  background-color: grey;
-  margin-left: 250px;
-  height: 80px;
 }
 .main-list li {
   display: inline-block;
   margin-left: 40px;
-  font-size: 20px;
-
   position: relative;
 }
 .main-list li a {
@@ -45,7 +51,7 @@ body {
 
 .main-list li a:hover {
   margin-left: 0px;
-  background-color: purple;
+  background-color: rgb(206, 205, 205)
 }
 
 .main-list li:hover ul.dropdown {
@@ -55,7 +61,7 @@ body {
   margin-left: 0px;
 }
 .main-list li:hover ul.dropdown li a:hover {
-  background-color: rgb(90, 90, 255);
+  background-color: rgb(204, 204, 206);
 }
 .main-list li:hover ul.dropdown li {
   margin-left: 0px;
@@ -63,19 +69,43 @@ body {
   width: 100%;
 }
 
+/*---------- main nav info ----------*/
+.nav-bar-div3-bus-info{
+/*  background-color: red;*/
+  display:flex;
+  width:700px;
+  height:80px;
+}
+.business-info{
+  /*background-color: orange;*/
+
+}
+
+.business-info-address-header h4{
+  text-align: center;
+  padding:15px;
+}
+
+.nav-bar-hours{
+  margin-left:30px;
+ /* background-color: green; */
+}
+
+.nav-bar-hours-list div h4{
+  padding-top:20px;
+}
+.nav-bar-weekdays-hours{
+  text-align: center;
+  padding-top:5px;
+}
 /* ----------- Main Image CSS -------- */
 
 .main-img-div {
-  background-color: red;
+/*  background-color: red; */
   justify-items: center;
   width: 1707px;
-  height: 300px;
+  height: 500px;
 }
-.main-image {
-  margin-left: 500px;
-  width: 400px;
-}
-
 /*------ main container for body -----*/
 
 .main-container {
@@ -83,50 +113,52 @@ body {
 }
 
 .main-container-child-div1 {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  height: 800px;
+  width:500px;
+
 }
 .main-container-child-div2 {
-  /*  background-color: blue;   */
+  /*background-color: blue; */  
   display: flex;
   border-left: 1px solid black;
+  border-right: 1px solid black;
   flex-direction: column;
   width: 1600px;
-  height: 800px;
+  height: 1100px;
 }
 /*---------- container child divs --------*/
 
 .container-div2-child1 {
-  /*  background-color: yellow; */
+  background-color:rgba(230, 227, 227, 0.829);
   height: 200px;
-  border-radius: 10px;
-  border-bottom: 1px solid black;
-  margin-top: 20px;
+  width:1500px;
+  margin-left:60px;
+  justify-content: center;
+  border-radius: 30px;
+
+  margin-top: 40px;
 }
 .container-div2-child2 {
-  /*  background-color: orange;  */
+  background-color: rgba(230, 227, 227, 0.829);
+  width:1500px;
   height: 220px;
-  border-radius: 10px;
-  border-bottom: 1px solid black;
-  margin-top: 20px;
+  margin-left:60px;
+  border-radius: 30px;
+  margin-top: 40px;
 }
 .container-div2-child3 {
   /*  background-color: green;  */
-  height: 200px;
-  border-radius: 10px;
-  border-bottom: 1px solid black;
+  height: 500px;
   margin-top: 15px;
 }
 
 /* ---------- child div 1 -----------*/
 
 .div2-child-header {
-  /*  background-color: pink;  */
-  width: fit-content;
-  margin-left: 50px;
-  margin-top: 20px;
+ /*  background-color: pink;  */
+   border-radius: 10px;;
+   text-decoration: underline;
+   text-align: center;
+  margin-top: 10px;
 }
 .div2-child-content {
   margin-top: 10px;
@@ -138,13 +170,19 @@ body {
 /*----------- child div 2 colum ------ */
 
 .div2-child-header2 {
-  /*  background-color: pink;*/
-  width: fit-content;
-  margin-left: 50px;
-  margin-top: 20px;
+ /* background-color: pink; */
+ text-decoration: underline;
+ text-align: center;
+ border-radius: 10px;;
+  margin-top: 10px;
+}
+.div2-child-header2 h3{
+  justify-content: center;
+  text-align: center;
 }
 .div2-child-content2 {
   display: flex;
+  justify-content: center;
 }
 .list-div2-content1 {
   margin-left: 80px;
@@ -164,91 +202,128 @@ body {
 
 /*-------------- container diiv 3 --------------*/
 .container-div2-child3 h3 {
-  margin-left: 20px;
+  background-color: pink;
+  text-align: center;
   margin-top: 10px;
 }
 
 .container-div2-child3-list {
+  background-color: orange;
   margin-top: 10px;
   font-size: 20px;
   margin-left: 20px;
 }
 
-/* ---------- container child columns -------*/
-
-.container-child-c1 {
-  display: flex;
-  flex-direction: column;
-  height: 266px;
-  border-bottom: 1px solid black;
-}
-.container-child-c2 {
-  height: 266px;
-  border-bottom: 1px solid black;
-}
-.container-child-c3 {
-  height: 266px;
-  border-bottom: 1px solid black;
-}
-
-/*-------- child column 1 child / content ------*/
-
-.child-c1-header {
-  height: 50px;
-  text-align: center;
-}
-.child-c1-header h2 {
-  margin-top: 10px;
-  text-decoration: underline;
-}
-
-.child-c1-content {
-  text-align: center;
+.container-div2-child3-widget{
+  background-color: rgba(230, 227, 227, 0.829);
+  width:1500px;
   height: 220px;
-}
-.child-c1-content h3 {
-  margin-top: 60px;
-  text-wrap: balance;
-}
-
-/*---------child column 2 child / content -----*/
-.container-child-c2 {
-  display: flex;
-  flex-direction: column;
-}
-.child-c2-header {
-  height: 40px;
-  text-align: center;
-}
-.child-c2-header h2 {
-  margin-top: 10px;
-  text-wrap: wrap;
-  text-decoration: underline;
-}
-.child-c2-content {
-  text-align: center;
-  height: 230px;
-}
-.child-c2-content h2 {
-  margin-top: 50px;
+  margin-left:60px;
+  border-radius: 30px;
+  margin-top: 40px;
 }
 
-/*---------- child column 3 child / content ------*/
 
-.container-child-c3:hover {
-  cursor: pointer;
+/*------------------- choice bubbles of consoles ---------- */
+
+.console-container-selection-bubbles{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin-top: 30px;
+  background-color: rgba(230, 227, 227, 0.829);
 }
-.container-child-c3 {
-  background-color: rgb(77, 231, 231);
+.console-bubble{
+  margin-left: 8px;
+  width:180px;
 }
 
-.container-child-c3 h2 {
-  margin-left: 60px;
-  margin-top: 100px;
+/* ------------------- bubble images -------------- */
+.ps5-image{
+  width:180px;
+  height:200px;
+  border: 3px solid black;
+  border-radius: 30px;
 }
+
+
+.playstation-bubble-container{
+  border-radius: 45px;
+  width:180px;
+}
+.xbox-image{
+  width:180px;
+  height:200px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.nintendo-image{
+  width:180px;
+  height:200px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.pc-gaming-image{
+  width:180px;
+  height:200px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.retro-gaming-image{
+  width:180px;
+  height:200px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.accessories-gaming-image{
+  width:180px;
+  height:200px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+
 
 /*--------- footer container ------*/
 .footer-container {
-  background-color: purple;
-  height: 150px;
+ /* background-color: purple; */
+  display:flex;
+  height: 180px;
+  border-top: 1px solid black;
+  background-color: rgba(230, 227, 227, 0.829);
+}
+
+.footer-column1{
+/*  background-color: orange; */
+  width:1000px;
+}
+.footer-column2{
+/*  background-color: green; */
+  width:1100px;
+}
+.footer-column3{
+/* background-color: pink; */
+  width:1000px;
+}
+
+.column2-header{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.email-userinput{
+  border-radius: 5px;
+  height:20px;
+}
+.column2-email-submit{
+text-align: center;
+margin-top: 20px;
+border-radius: 2px;
+}
+.footer-private-policy{
+  text-align: center;
+}
+.footer-private-policy h6{
+  margin-top:20px;
 }
